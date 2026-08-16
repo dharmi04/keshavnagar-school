@@ -9,6 +9,7 @@ export const schoolConfig = {
   email: "info@keshavnagarschool.edu",
   officeHours: "Monday to Friday, 8:00 AM - 4:00 PM",
   googleFormUrl: import.meta.env.VITE_GOOGLE_FORM_URL || "https://forms.google.com",
+  analyticsMeasurementId: import.meta.env.VITE_GA_MEASUREMENT_ID || "",
   coverImageUrl: "/assets/WhatsApp%20Image%202026-08-16%20at%2020.54.31.jpeg",
   mapUrl:
     "https://www.google.com/maps?q=3H8P%2BC2X%2C%20Keshav%20Nagar%20Rd%2C%20Bindu%20Park%20Society%2C%20Keshav%20Nagar%2C%20Ahmedabad%2C%20Gujarat%20380027&output=embed",
