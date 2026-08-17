@@ -6,8 +6,8 @@ export const schoolConfig = {
   address:
     "3H8P+C2X, Keshav Nagar Rd, Bindu Park Society, Keshav Nagar, Ahmedabad, Gujarat 380027",
   phone: "+91 00000 00000",
-  email: "info@keshavnagarschool.edu",
-  officeHours: "Monday to Friday, 8:00 AM - 4:00 PM",
+  email: "keshavguj01@gmail.com",
+  officeHours: "Monday to Friday, 7:10 AM - 12:30 PM",
   googleFormUrl: import.meta.env.VITE_GOOGLE_FORM_URL || "https://forms.google.com",
   coverImageUrl: "/assets/WhatsApp%20Image%202026-08-16%20at%2020.54.31.jpeg",
   mapUrl:
