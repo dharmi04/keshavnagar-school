@@ -1,6 +1,5 @@
-import { LogIn, Upload } from "lucide-react";
+import { Upload } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
-import { Link } from "react-router-dom";
 import Button from "../components/Button.jsx";
 import GalleryGrid from "../components/GalleryGrid.jsx";
 import ImageModal from "../components/ImageModal.jsx";
@@ -57,21 +56,11 @@ export default function Gallery() {
             title="Explore life on campus"
             description="Browse recent school activities, sports, celebrations, student learning, and campus moments."
           />
-          {isAuthenticated ? (
+          {isAuthenticated && (
             <Button onClick={() => setUploadOpen(true)}>
               <Upload size={18} />
               Upload Photos
             </Button>
-          ) : (
-            <div className="rounded-lg bg-white p-5 shadow-sm ring-1 ring-slate-200">
-              <p className="font-semibold text-slate-950">Sign in to upload photos</p>
-              <Link to="/signin" className="mt-3 inline-flex">
-                <Button>
-                  <LogIn size={18} />
-                  Sign In
-                </Button>
-              </Link>
-            </div>
           )}
         </div>
 

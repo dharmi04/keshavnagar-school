@@ -40,7 +40,7 @@ export default function Navbar() {
               {link.label}
             </NavLink>
           ))}
-          {isAuthenticated ? (
+          {isAuthenticated && (
             <>
               <span className="ml-3 inline-flex items-center gap-2 rounded-md bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-700">
                 <User size={16} aria-hidden="true" />
@@ -51,10 +51,6 @@ export default function Navbar() {
                 Logout
               </Button>
             </>
-          ) : (
-            <NavLink to="/signin" className={linkClass}>
-              Sign In
-            </NavLink>
           )}
         </div>
 
@@ -76,7 +72,7 @@ export default function Navbar() {
                 {link.label}
               </NavLink>
             ))}
-            {isAuthenticated ? (
+            {isAuthenticated && (
               <>
                 <div className="rounded-md bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-700">
                   {user.name}
@@ -86,10 +82,6 @@ export default function Navbar() {
                   Logout
                 </Button>
               </>
-            ) : (
-              <NavLink to="/signin" className={linkClass} onClick={() => setOpen(false)}>
-                Sign In
-              </NavLink>
             )}
           </div>
         </div>
